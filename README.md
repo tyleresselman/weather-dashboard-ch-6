@@ -1,15 +1,18 @@
-# weather-dashboard-ch-6
+# Weather Dashboard - Challenge 6
 
-GIVEN a weather dashboard with form inputs
-WHEN I search for a city
+# Description
+This challenge was indeed a challenge for me. Our task was to create a weather dashboard so that a user might be able to search for weather information for a given city and also see that city's five day forecast. The breif stated that we were to make use of  I unfortunately failed to organize my work effectively enough to complete the task fully. I intend to seek more help and guidance this week and use all of the resources at my disposal to improve my work. Thank you for your understanding, improvements to come.
 
 
-THEN I am presented with current and future conditions for that city and that city is added to the search history
-WHEN I view current weather conditions for that city
-THEN I am presented with the city name, the date, an icon representation of weather conditions, the temperature, the humidity, the wind speed, and the UV index
-WHEN I view the UV index
-THEN I am presented with a color that indicates whether the conditions are favorable, moderate, or severe
-WHEN I view future weather conditions for that city
-THEN I am presented with a 5-day forecast that displays the date, an icon representation of weather conditions, the temperature, the wind speed, and the humidity
-WHEN I click on a city in the search history
-THEN I am again presented with current and future conditions for that city
+# LIVE LINK
+[LIVE LINK](https://tyleresselman.github.io/weather-dashboard-ch-6/)
+
+# Screenshot
+
+![Screenshot](./assets/images/weather-dashboard-screenshot.png)
+
+# Credits
+
+I collaborated with Joseph Ruiz and Jordan Harris on the logic and pseudo-code of this challenge.
+
+
