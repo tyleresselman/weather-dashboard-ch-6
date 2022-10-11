@@ -1,61 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather Dashboard</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js" integrity="sha512-CryKbMe7sjSCDPl18jtJI5DR5jtkUWxPXWaLCst6QjH8wxDexfRJic2WRmRXmstr2Y8SxDDWuBO6CQC6IE4KTA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Dashboard</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"
+    integrity="sha512-CryKbMe7sjSCDPl18jtJI5DR5jtkUWxPXWaLCst6QjH8wxDexfRJic2WRmRXmstr2Y8SxDDWuBO6CQC6IE4KTA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 </head>
+
 <body>
 
-    <section class="hero is-small is-warning">
-        <div class="hero-body is-flex is-justify-content-center">
-            <p class="title">
-                A Weather Dashboard
-            </p>
-        </div>
-    </section>
-    
-    <section class="section">
-    <div class="columns">
-        <div class="column is-one-third m-2">
-          <div class="column p-2">
-            <h1>Search for a city:</h1>
-            <div class="control">
-                <input class="input is-hovered" type="text" id="input-city" placeholder="Enter city name here...">
-                <button id="search-btn" class="button is-right is-rounded">Search</button>
-            </div>
-            <div id="recent-searches-box"></div>
-          </div>
-        </div>
+  <section class="hero is-small is-warning">
+    <div class="hero-body is-flex is-justify-content-center">
+      <h1 class="title">A Weather Dashboard</h1>
+    </div>
+  </section>
 
-        
-        <div class="column is-two-thirds m-2">
-          <div class="column" id="current-display">
-            <h1 class="title is-2" id="current-title"></h1>
-            <img id="current-weather-img" src="" alt="">
-            <div id="current-temperature"></div>
-            <div id="current-wind-speed"></div>
-            <div id="current-humidity"></div>
-            <div id="current-uv-index"></div>
+  <section class="section">
+    <div class="columns">
+      <div class="column is-one-third m-2">
+        <form class="field">
+          <h1>Search for a city:</h1>
+          <div class="control">
+            <input class="input is-hovered" type="text" id="input-city" placeholder="Enter city name here...">
+          </div>
+          <div class="control" id="button-section">
+            <button id="search-btn" class="button is-right is-rounded">Search</button>
+          </div>
+        </form>
+      </div>
+
+
+      <div class="column is-two-thirds m-2">
+        <div class="columns">
+          <div class="column" id="current-weather-display">
+            <h1 class="title is-2" id="city-name">LOS ANGELES</h1>
+            <div id="current-temperature">HOT</div>
+            <div id="current-wind-speed">FAST</div>
+            <div id="current-humidity">WET</div>
+            <div id="current-uv-index">BRIGHT</div>
           </div>
         </div>
         <div class="columns">
-            <h2 class="title is-3" id="forecast-title"></h2>
+          <h2 class="title is-3" id="forecast-title"></h2>
         </div>
         <div class="columns" id="forecast-display">
         </div>
+      </div>
     </div>
   </section>
-    
-    <script
-  src="https://code.jquery.com/jquery-3.6.1.min.js"
-  integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
-  crossorigin="anonymous"></script>
-    <script src="./assets/js/script.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  <script src="./assets/js/script.js"></script>
 </body>
+
 </html>
