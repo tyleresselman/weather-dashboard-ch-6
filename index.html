@@ -41,25 +41,83 @@
       <div class="column is-two-thirds m-2">
         <div class="columns">
           <div class="column" id="current-weather-display">
-            <h1 class="title is-2" id="city-name">LOS ANGELES</h1>
-            <div id="current-temperature">HOT</div>
-            <div id="current-wind-speed">FAST</div>
-            <div id="current-humidity">WET</div>
-            <div id="current-uv-index">BRIGHT</div>
+            <h1 class="title is-2" id="city-name"></h1>
+            <h2 id="current-date"></h2>
+            <img id="icon" alt="icon indicating current weather">
+            <div id="current-temperature"></div>
+            <div id="current-wind-speed"></div>
+            <div id="current-humidity"></div>
+            <div id="current-uv-index"></div>
+          </div>
+
+          <div class="column">
+            <div id="icon"></div>
           </div>
         </div>
-        <div class="columns">
-          <h2 class="title is-3" id="forecast-title"></h2>
-        </div>
-        <div class="columns" id="forecast-display">
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <script src="https://code.jquery.com/jquery-3.6.1.min.js"
-    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
-  <script src="./assets/js/script.js"></script>
+        <div class="container">
+          <div class="content">
+            <h2>Your Five Day Forecast...</h2>
+            <div class="columns">
+
+              <div class="column card">
+                <div id="forecastday1" class="card-content">
+                  <h3 id="forecastdate1"></h3>
+                  <img id="forecasticon1" src="" alt="">
+                  <h4 id="forecasttemp1"></h4>
+                  <h4 id="forecasthum1"></h4>
+                  <h4 id="forecastwindspeed1"></h4>
+                </div>
+              </div>
+
+              <div class="column card">
+                <div id="forecastday2" class="card-content">
+                  <h3 id="forecastdate2"></h3>
+                  <img id="forecasticon2" src="" alt="">
+                  <h4 id="forecasttemp2"></h4>
+                  <h4 id="forecasthum2"></h4>
+                  <h4 id="forecastwindspeed2"></h4>
+                </div>
+              </div>
+
+              <div class="column card">
+                <div id="forecastday3" class="card-content">
+                  <h3 id="forecastdate3"></h3>
+                  <img id="forecasticon3" src="" alt="">
+                  <h4 id="forecasttemp3"></h4>
+                  <h4 id="forecasthum3"></h4>
+                  <h4 id="forecastwindspeed3"></h4>
+                </div>
+              </div>
+
+              <div class="column card">
+                <div id="forecastday4" class="card-content">
+                  <h3 id="forecastdate4"></h3>
+                  <img id="forecasticon4" src="" alt="">
+                  <h4 id="forecasttemp4"></h4>
+                  <h4 id="forecasthum4"></h4>
+                  <h4 id="forecastwindspeed4"></h4>
+                </div>
+              </div>
+
+              <div class="column card">
+                <div id="forecastday5" class="card-content">
+                  <h3 id="forecastdate5"></h3>
+                  <img id="forecasticon5" src="" alt="">
+                  <h4 id="forecasttemp5"></h4>
+                  <h4 id="forecasthum5"></h4>
+                  <h4 id="forecastwindspeed5"></h4>
+                </div>
+              </div>
+
+
+
+            </div>
+          </div>
+          <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+            integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+          <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
+          <script src="./assets/js/script.js"></script>
 </body>
 
 </html>
