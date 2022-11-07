@@ -87,6 +87,7 @@ function forecastDisplay(data) {
   }
 };
 
+// function to save cities to localstorage and in recent searches section
 function saveCitySearch() {
   let recentSearches = $('#button-section');
   let recentCityButton = $('<btn class="button is-rounded">');
